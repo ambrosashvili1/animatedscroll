@@ -1,0 +1,244 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .header {
+    padding: 20px 20px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+
+  .content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+    box-shadow: 2px 2px 15px black;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .border {
+    width: 100px;
+    height: 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .logo {
+    color: blue;
+  }
+
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    gap: 30px;
+  }
+
+  .center p{
+    opacity: 0.8;
+  }
+
+  .together input{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .together button {
+    width: 60px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+  }
+
+  .together {
+    box-shadow: 5px 5px 15px rgb(80, 79, 79);
+  }
+
+  .all {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+  }
+
+  .first {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .second {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      
+  }
+
+  .third {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  
+
+}
+
+.div {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+} */
+
+
+
+
+/* //scroll pos */
+
+/* #container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    overflow-x: scroll;
+  }
+  
+  #content {
+    width: 250px;
+    background-color: #ccc;
+  } */
+
+
+
+
+
+
+  /* //progress scroll */
+
+
+  /* .header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+
+  .progress-bar {
+    height: 8px;
+    background: red;
+    width: 0%;
+  }
+
+  .container {
+    width: 100%;
+    height: 800px;
+  } */
+
+
+
+
+  /* scroll animation  */
+
+.blue {
+  --clr: #4285F4;
+}
+
+.red {
+  --clr: #DB4437;
+}
+
+.yellow {
+  --clr: #F4B400;
+}
+
+.green {
+  --clr: #0F9D58;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1{
+  color: rgb(202, 198, 198);
+  text-transform: uppercase;
+  margin: 30px;
+
+}
+
+.box{
+  background-color: var(--clr);
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.6s ease;
+
+}
+
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.box.show{
+  transform: translateX(0);
+}
+
+.box h2{
+  font-size: 45px;
+  text-shadow: 2px 2px 3px black;
+}
